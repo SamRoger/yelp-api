@@ -1,0 +1,26 @@
+@import 'background-video';
+
+ body {
+	background-color: teal;
+}
+
+.searchContainer {
+	margin: 50px;
+	text-align: center;
+	.button {
+		opacity: 0.7;
+		cursor: pointer;
+		border-radius: 5px;
+		font-size: 13px;
+		&:hover {
+			background-color: teal;
+	.userInput {
+		height: 15px;
+			}
+		}
+	}
+}
+
+.results {
+	color: #fff;
+}
