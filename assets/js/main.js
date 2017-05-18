@@ -57,27 +57,27 @@ function searchShow() {
             location: userInputCity1
         },
          success: function(response){   
-             // results.innerHTML = (response.businesses[1].name)
+             results.innerHTML = (response.businesses[1].name)
              counter = 0
              counter +=1
              test = response.businesses
-            //  test.forEach(function(element) {
-            //     // results.innerHTML = element.name
-            //     // console.log(element.display_phone)
-            //     console.log(element.name)
+             test.forEach(function(element) {
+                results.innerHTML = element.name
+                console.log(element.display_phone)
+                console.log(element.name)
 
-            // })
+            })
 
              for (var i = 0; i < test.length; i++) {
                 list.innerHTML = (test[i].name)
                 console.log(test[i].name)
              }
-             // console.log(response.businesses[1].name)
-             // console.log(response.businesses.name)
-             // // for (var i = 0; i < restaurants.length; i++) {`
-                // results.innerHTML = restaurants[i].name
-             // }
-         }
+             console.log(response.businesses[1].name)
+             console.log(response.businesses.name)
+             // for (var i = 0; i < restaurants.length; i++) {`
+                results.innerHTML = restaurants[i].name
+             }
+         
      })
 }
 
